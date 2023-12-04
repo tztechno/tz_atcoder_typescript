@@ -1,11 +1,11 @@
 import * as fs from "fs";
 const filePath: string = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
-const input: string = fs.readFileSync(filePath).toString().split("\n")[0];
+const S: string = fs.readFileSync(filePath).toString().split("\n")[0];
 
-const n = input.length;
-
+const n = S.length;
 if (n < 4) {
-    const paddedString = '0'.repeat(4 - n) + input;
+    const paddedString = '0'.repeat(4 - n) + S;
     console.log(paddedString);
 } else {
-    console.log(input);
+    console.log(S);
+}
