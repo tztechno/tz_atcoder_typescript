@@ -22,11 +22,18 @@
 ```
 ---
 ```
-
+import { readFileSync } from "fs";
+const input: string = readFileSync("/dev/stdin", "utf8");
+const n = input.split("\n")[0];
 ```
 ---
 ```
-
+import * as fs from "fs";
+const filePath: string = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
+const input: string = fs.readFileSync(filePath).toString();
+const lines: string[] = input.split("\n");
+const N: number = parseInt(lines[0], 10);
+const A: number[] = lines[1].split(" ").map(Number);
 ```
 ---
 ```
