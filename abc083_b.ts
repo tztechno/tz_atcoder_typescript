@@ -6,7 +6,7 @@ abc083_b.ts
 ##########################################
 ##########################################
 ##########################################
-[after fix: WA]
+[after fix: AC]
 const stdin = require('fs').readFileSync('/dev/stdin', 'utf8')
 const [N,A,B] = stdin.split('\n')[0].split(' ').map(Number)
     
