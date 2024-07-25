@@ -22,6 +22,45 @@
 ```
 ---
 ```
+
+```
+---
+```
+
+```
+---
+```
+
+```
+---
+```
+var ans=0    
+for (let i=1; i<N+1; i++) {
+  var p=value(i)
+  if (A<=p && p<=B) {
+    ans=ans+i
+  }
+}
+console.log(ans)
+```
+---
+```
+function value(i: number): number {
+  let p = 0;
+  while (i>0) {
+    p = p + i%10; 
+    i = Math.floor(i/10); 
+  }
+  return p;
+}
+```
+---
+```
+const stdin = require('fs').readFileSync('/dev/stdin', 'utf8')
+const [N,A,B] = stdin.split('\n')[0].split(' ').map(Number)
+```
+---
+```
 import { readFileSync } from "fs";
 const input: string = readFileSync("/dev/stdin", "utf8");
 const n = input.split("\n")[0];
